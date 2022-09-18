@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(./assets/Fundo.jpg);
+    background-position:top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+body * {
+ font-family: 'inter', sans-serif;
+ color: white;
+ line-height: 160%;
+}
+header{
+    text-align: center;
+    animation: deCima 1.5s;
+    margin-top: 32px;
+}
+header div{
+    width: 120px;
+    
+    margin: auto;
+    background-image: linear-gradient(90deg,#9512fc 0%, #43e7ad 50.52%,#e2d45c );
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+
+}
+header div:hover{
+    transform: scale(1.1);
+}
+header img{
+    width: 115px;
+    border-radius: 50%;
+
+}
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    gap:24px;
+    flex-direction: column;
+    text-align: center;
+}
+section{
+    color: white;
+background-image: linear-gradient(90deg,#9512fc 0%, #43e7ad 50.52%,#e2d45c );
+padding-top: 4px;
+border-radius: 10px;
+margin-top: 32px;
+animation: deBaixo 1.5s;
+    
+}
+
+
+section div{
+    background-color: #2a2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+section h2{
+    
+    letter-spacing: - 0.47px;
+}
+section p{
+    color: #A1A1AA;
+}
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+section ul li{
+    transition: trasnform .3s;
+    
+
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+.gamesList img{
+    width: 90px;
+    border-radius:8px ;
+}
+.channelList img{
+    border-radius: 100px;
+    width: 70px;
+    border: 1px solid #443e54;
+
+}
+
+
+
+@keyframes deCima{
+    from{
+        opacity:0;
+        transform: translateY(-30px
+        );}
+
+    to{
+        opacity:1 ;
+        transform: translateY(0);
+    }
+}
+@keyframes deBaixo{
+    from{
+        opacity:0;
+        transform: translateY(30px
+        );}
+
+    to{
+        opacity:1 ;
+        transform: translateY(0px);
+    }
+}
